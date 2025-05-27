@@ -70,6 +70,9 @@ Here are the breakdown for the parameters:
 ### License
 Our code is released under MIT License (see LICENSE file for details).
 
+### Collaboration
+If you are looking for further collaboration, or if you would like to compare the results with our method but our codebase release is not fully finished, please contact me by *detailzxc2010@gmail.com* and we would love to generate reconstruction results.
+
 ## TODO
 - [] Code release for tree connection lib and visualization
 - [] Webpage for online reconstruction
