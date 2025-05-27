@@ -39,7 +39,7 @@ conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit
 pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-Please install packages and compile kernal from RSCNN(https://github.com/Yochengliu/Relation-Shape-CNN) by:
+Please install packages and compile kernal from [RSCNN](https://github.com/Yochengliu/Relation-Shape-CNN) by:
 ```
 pip install -r requirement.txt
 ```
