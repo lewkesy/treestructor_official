@@ -1,0 +1,3 @@
+# ninja log v5
+0	18939	1697664094792239787	/home/zhou1178/RSCNN_Yshape_embedding/utils/chamfer3D/build/temp.linux-x86_64-cpython-38/home/zhou1178/RSCNN_Yshape_embedding/utils/chamfer3D/chamfer3D.o	e1d14b8ec465560a
+1	20105	1697664095948242707	/home/zhou1178/RSCNN_Yshape_embedding/utils/chamfer3D/build/temp.linux-x86_64-cpython-38/home/zhou1178/RSCNN_Yshape_embedding/utils/chamfer3D/chamfer_cuda.o	478158dfce976008

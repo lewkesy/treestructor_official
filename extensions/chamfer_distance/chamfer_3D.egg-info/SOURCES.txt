@@ -1,0 +1,13 @@
+chamfer3D.cu
+chamfer_cuda.cpp
+setup.py
+/home/zhou1178/RSCNN_Yshape_embedding/extensions/chamfer_distance/chamfer3D.cu
+/home/zhou1178/RSCNN_Yshape_embedding/extensions/chamfer_distance/chamfer_cuda.cpp
+/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/chamfer3D.cu
+/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/chamfer_cuda.cpp
+/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/extensions/chamfer_distance/chamfer3D.cu
+/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/extensions/chamfer_distance/chamfer_cuda.cpp
+chamfer_3D.egg-info/PKG-INFO
+chamfer_3D.egg-info/SOURCES.txt
+chamfer_3D.egg-info/dependency_links.txt
+chamfer_3D.egg-info/top_level.txt

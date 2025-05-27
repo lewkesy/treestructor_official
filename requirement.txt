@@ -1,0 +1,13 @@
+./extensions/chamfer_distance/.
+./extensions/earth_movers_distance/.
+./pointnet2_ops_lib/.
+plyfile
+lightning
+matplotlib
+open3d
+PyYAML
+h5py
+scikit-learn
+ninja
+rich
+tensorboard

@@ -1,0 +1,3 @@
+# ninja log v5
+1	22589	1704065639627537957	/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/earth_movers_distance/build/temp.linux-x86_64-cpython-37/emd_kernel.o	33cfae260f31e84d
+1	29483	1704065646503487382	/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/earth_movers_distance/build/temp.linux-x86_64-cpython-37/emd.o	94a782dc214b2e6c

@@ -1,0 +1,20 @@
+# ninja log v5
+0	22166	1709841109882895141	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/ballquery/ballquery_cuda_kernel.o	ca79b9534447673d
+2	22261	1709841109978895366	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/grouping_int/grouping_int_cuda_kernel.o	97182b3357a5b9a0
+2	22628	1709841110350896241	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda_kernel.o	9f56b366985a34bb
+1	22741	1709841110454896485	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/featuredistribute/featuredistribute_cuda_kernel.o	4374889e4db7d2a6
+4	23144	1709841110866897453	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda_kernel.o	e0f4609c1895debc
+3	23200	1709841110914897566	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda_kernel.o	53391ffd2ea102f2
+5	23678	1709841111402898713	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/labelstat/labelstat_cuda_kernel.o	9199b91e8b5f18ce
+4	24235	1709841111946899990	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery_heap/knnquery_heap_cuda_kernel.o	3f7e9793dbe4e13c
+6	24546	1709841112266900742	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda_kernel.o	9671f62883d4e566
+5	28350	1709841116042909614	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/pointops_api.o	387b5bb434b4be7d
+17	12254	1709841318451384233	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda.o	4f391af61086553a
+16	12425	1709841318623384636	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda.o	6c6f1133d0239597
+15	12436	1709841318639384673	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda.o	ff74504f980c1d95
+16	12760	1709841318959385422	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda.o	9fca7f6221118a1b
+15	12841	1709841319039385610	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/ballquery/ballquery_cuda.o	e2f79edfc0150c7f
+17	12853	1709841319051385638	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery_heap/knnquery_heap_cuda.o	e3970a13bd694961
+17	13004	1709841319199385984	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/labelstat/labelstat_cuda.o	6156cf6101b4407d
+16	13095	1709841319291386200	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/grouping_int/grouping_int_cuda.o	ef8a7485287bc502
+15	13120	1709841319319386265	/home/zhou1178/RSCNN_Yshape_embedding_v2_idif001/pt/pointops/build/temp.linux-x86_64-cpython-38/src/featuredistribute/featuredistribute_cuda.o	96dd07dc45a2e525

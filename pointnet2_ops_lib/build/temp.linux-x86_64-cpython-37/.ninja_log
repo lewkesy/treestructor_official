@@ -1,0 +1,10 @@
+# ninja log v5
+1	30764	1704065681995226321	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/bindings.o	2961f31ab08edcb1
+1	32626	1704065683851212669	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/group_points.o	fc43ad97d23346e2
+2	33529	1704065684759205990	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/sampling.o	bb7bbc4a7cc32e9c
+2	33766	1704065685003204195	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/interpolate.o	23a625ed6cd87883
+0	33822	1704065685043203900	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/ball_query.o	c2bb99d6ab857b44
+1	64598	1704065715822977489	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/group_points_gpu.o	bf09d8ebc8594543
+2	64830	1704065716058975753	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/sampling_gpu.o	2848b87374953355
+0	64904	1704065716130975223	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/ball_query_gpu.o	631d60c368c6c1d6
+2	64921	1704065716146975105	/home/zhou1178/RSCNN_Yshape_embedding_v2/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-37/pointnet2_ops/_ext-src/src/interpolate_gpu.o	c79a386cf88719ed

@@ -1,0 +1,3 @@
+# ninja log v5
+1	21944	1704065602555810626	/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/build/temp.linux-x86_64-cpython-37/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/chamfer3D.o	21d431976799b3bb
+1	31146	1704065611731743137	/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/build/temp.linux-x86_64-cpython-37/home/zhou1178/RSCNN_Yshape_embedding_v2/extensions/chamfer_distance/chamfer_cuda.o	4473c501b9b0afc5
