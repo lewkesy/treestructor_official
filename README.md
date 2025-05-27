@@ -12,6 +12,7 @@ In this repository, we release code and data for training TreeStructor and infer
 
 ### Citation
 If you find our work useful in your research, please consider citing:
+```
 @ARTICLE{10950450,
         author={Zhou, Xiaochen and Li, Bosheng and Benes, Bedrich and Habib, Ayman and Fei, Songlin and Shao, Jinyuan and Pirk, Sören},
         journal={IEEE Transactions on Geoscience and Remote Sensing}, 
@@ -22,6 +23,7 @@ If you find our work useful in your research, please consider citing:
         pages={1-1},
         keywords={Vegetation;Point cloud compression;Forestry;Solid modeling;Three-dimensional displays;Vegetation mapping;Skeleton;Image reconstruction;Vectors;Laser radar;Neural Networks;Forest Modeling;3D Reconstruction;and Remote Sensing},
         doi={10.1109/TGRS.2025.3558312}}
+```
 
 ### Environment install
 We encourage our users to use Conda environment for the best experience. The following instructions should be conducted in your local environment:
