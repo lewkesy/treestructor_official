@@ -25,38 +25,39 @@ If you find our work useful in your research, please consider citing:
 
 ### Environment install
 We encourage our users to use Conda environment for the best experience. The following instructions should be conducted in your local environment:
-'''
+
+```
 conda create -n treestructor python=3.8
 conda activate treestructor
-'''
+```
 
 Our codebase is tested under Pytorch1.13 + CUDA 11.7 environment. Please install the related environment by: 
-'''
+```
 conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit
 pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
-'''
+```
 
 Please install packages and compile kernal from RSCNN(https://github.com/Yochengliu/Relation-Shape-CNN) by:
-'''
+```
 pip install -r requirement.txt
-'''
+```
 
 ### Usage
 Please train the model with proper dataset by:
-'''
+```
 python train.py
-'''
+```
 You can customize the traning strategy in the codebase. The current training is using 4 GPUs. The initial parameters are designed for the best performance for training purpose.
 
 For inference, please save your data in ./data folder first. Please keep in mind that the direction of tree growth is **Y-axis**. If the point scanning for your data is pointing to Z-axis, please run the normalization process:
-'''
+```
 python real_data_normalization_multi.py --filename $YOUR_FILENAME
-'''
+```
 
 Please run command for peak clustering and neural ranking:
-'''
+```
 python reconstruction_inference.py --filename $YOUR_FILENAME --rotate_augmentation --scale 80 --sample_num 40000 --candidate_num 5
-'''
+```
 
 Here are the breakdown for the parameters:
 - filename: filename for the point cloud
