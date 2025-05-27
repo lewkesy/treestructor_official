@@ -8,7 +8,7 @@ Created by Xiaochen Zhou, Bosheng Li, Bedrich Benes, Ayman Habib, Songlin Fei, J
 ### Introduction
 This is the official implementation for our [report](https://ieeexplore.ieee.org/document/10950450) published on IEEE transaction of Geoscience and Remote Sensing. We introduce TreeStructor, a novel approach for isolating and reconstructing forest trees. The key novelty is a deep neural model that uses neural ranking to assign pre-generated connectable 3D geometries to a point cloud. TreeStructor is trained on a large set of synthetically generated point clouds. The input to our method is a forest point cloud that we first decompose into point clouds that approximately represent trees and then into point clouds that represent their parts. We use a point cloud encoder-decoder to compute embedding vectors that retrieve the best-fitting surface mesh for each tree part point cloud from a large set of predefined branch parts. Finally, the retrieved meshes are connected and oriented to obtain individual surface meshes of all trees represented by the forest point cloud.
 
-In this repository, we release code and data for training TreeStructor and inference code for peak density clustering and neural ranking. Please find *EvoEngine*(https://github.com/edisonlee0212/EvoEngine) for tree geometry connection and visualization (coming soon).
+In this repository, we release code and data for training TreeStructor and inference code for [peak density clustering](https://github.com/lewkesy/PeakDensityCluster) and neural ranking. Please find *EvoEngine*(https://github.com/edisonlee0212/EvoEngine) for tree geometry connection and visualization (coming soon).
 
 ### Citation
 If you find our work useful in your research, please consider citing:
