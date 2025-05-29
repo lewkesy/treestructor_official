@@ -67,11 +67,19 @@ Here are the breakdown for the parameters:
 - sample_num: sampled number for each single tree in the forest point cloud.
 - candidate_num: selected candidates for each neural ranking results. E.g, 10 means selecting the top 10 tree part from the dataset with the closest neural feature and find the tree part with the lowest chamfer distance as the candidate.
 
+
+### Output of Inference
+When you finished the inference code, you will find your output in ./results folder. Here are some example of key files you may interested in:
+
+1. MST_seg_normalization_xxx.ply: This is the .ply file visualize the result of Peak Density Clustering from your input point cloud. These individual parts in different colors will be used in the next step for neural ranking.
+2. rebuild_MST_normalized_xxx.ply: This is the .ply file visualize the result of neural ranking. All tree part point clouds come from dataset during the neural ranking process.
+3. xxx.yml: Yaml file is a tree graph represent the connectivity of tree parts. This is a key file used for tree part connection and mesh generation. You need to pass this file to the tree mesh generation algorithm which has not been released yet. We will keep working on this section and update soon.
+
+### Tree Mesh Generation Pipeline
+If you are interested in generating tree meshes from the tree graph, or if you are looking for further collaboration, please contact me by *detailzxc2010@gmail.com* and my PhD advisor *bbenes@purdue.edu*. We would further share a codebase for the final generation process, or we would love to help generating reconstruction results for your data. Please share the point cloud file and yaml file if you would like to get generated results from us.
+
 ### License
 Our code is released under MIT License (see LICENSE file for details).
-
-### Collaboration
-If you are looking for further collaboration, or if you would like to compare the results with our method but our codebase release is not fully finished, please contact me by *detailzxc2010@gmail.com* and my PhD advisor *bbenes@purdue.edu*. We would love to generate reconstruction results.
 
 ## TODO
 - [] Code release for tree connection lib and visualization
