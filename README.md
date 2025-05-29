@@ -1,7 +1,7 @@
 ## *TreeStructor*: Forest Reconstruction With Neural Ranking
 Created by Xiaochen Zhou, Bosheng Li, Bedrich Benes, Ayman Habib, Songlin Fei, Jinyuan Shao, Sören Pirk
 
-|[Webpage](https://lewkesy.github.io/treestructor/)|[Paper](https://ieeexplore.ieee.org/document/10950450)|[Data](https://lewkesy.github.io/treestructor/)(coming soon)
+|[Webpage](https://lewkesy.github.io/treestructor/)|[Paper](https://ieeexplore.ieee.org/document/10950450)|[Data](https://drive.google.com/file/d/1IkBIoF1MitsuKz3H3gBV6ATwY9YqTRfG/view?usp=sharing)|
 
 ![prediction example](https://github.com/lewkesy/treestructor/blob/main/static/images/teaser.png)
 
