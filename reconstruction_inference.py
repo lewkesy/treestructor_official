@@ -323,8 +323,6 @@ def density_cluster(pc, root_radius, threshold, dist_cutoff_ratio, density_cutof
             pts = np.array(cluster_dict[cls])
             res.append(pts)  
     
-    # embed()
-    
     del peak_cluster
     
     return res
@@ -344,15 +342,11 @@ def point_cloud_decomposition(pc, root_radius):
     print("dist threshold: ", denoise_eps)
     print("radius: ", root_radius)
     print("Threshold: ", max(root_radius, denoise_eps))
-    # save_ply("ori_junction.ply", junction_pts[:, :3])
-    # save_ply("Cleaned_junction.ply", cleaned_junction_pts)
-    # embed()
     
     if cleaned_pts.shape[0] != 0:
-        # junction_list = density_cluster(cleaned_junction_pts, root_radius, threshold=max(root_radius, 0.03) * 1.35, dist_cutoff_ratio=0.04, density_cutoff_ratio=0, if_junction=True)
         # data_list = density_cluster(cleaned_pts, root_radius, threshold=root_radius * 1.15, dist_cutoff_ratio=0.04, density_cutoff_ratio=0, if_junction=True)
         # data_list = density_cluster(cleaned_pts, root_radius, threshold=root_radius * 2.35, dist_cutoff_ratio=0.04, density_cutoff_ratio=0, if_junction=True)
-        data_list = density_cluster(cleaned_pts, root_radius, threshold=root_radius * 2.25, dist_cutoff_ratio=0.035, density_cutoff_ratio=0, if_junction=True)
+        data_list = density_cluster(cleaned_pts, root_radius, threshold=root_radius * 1.75, dist_cutoff_ratio=0.035, density_cutoff_ratio=0, if_junction=True)
 
     print("Junction MST Done, data length: ", len(data_list))
 
@@ -445,7 +439,6 @@ def main():
     os.makedirs("./results/%s/raw_treepart_pc"%filename.split('.')[0], exist_ok=True)
     os.makedirs("./visualize/raw_treepart_pc", exist_ok=True)
     
-    # embed()
     print("Find root forest")
     save_ply("./results/%s/vis_pc_ori_%s.ply"%(filename.split('.')[0], filename), forest_pc)
     
@@ -509,9 +502,7 @@ def main():
         global_offset = curr_root_pts
         global_offset[1] = 0
         
-        embed()
         pc -= global_offset
-        # global_ratio = abs(pc[:, 1]).max()
         pc /= global_ratio  
         root_radius /= global_ratio
         
@@ -521,7 +512,6 @@ def main():
         print("Global ratio: ", global_ratio)
 
         ####################   pc decomposition ###########################  
-        # embed()
         data_list, noise_pc = point_cloud_decomposition(pc, root_radius)
         
         print("Start Embedding Process")
@@ -584,7 +574,6 @@ def main():
         for i in range(treepart.shape[0]):
             colored_pc.append([treepart[i][0], treepart[i][1], treepart[i][2], 0, 0, 255])
     save_ply_with_color("./results/%s/recon_reassign_segmentation.ply"%filename.split('.')[0], np.array(colored_pc))
-    # embed()
     
     print("The number of samples is %d"%len(pc_points))
     save_ply("scatter.ply", np.array(filtered_points))
@@ -594,7 +583,6 @@ def main():
     color_list = visualize_MST_list(valid_datalist, fn="./results/%s/MST_seg_%s.ply"%(filename.split('.')[0], filename), threshold=pc_lower_bound)   
     visualize_MST_list(total_datalist, fn="./results/%s/MST_seg_ori_%s.ply"%(filename.split('.')[0], filename), threshold=0)  
     
-    # embed()
     
      # find the corresponding tree center
     treepart_identity_point = np.array(treepart_identity_point)
@@ -670,8 +658,6 @@ def main():
     
     # visualize the gt pts with dir color
     color_by_dir = ((1 + pred_dirs / np.sqrt(np.sum(pred_dirs**2, axis=1, keepdims=True))) / 2 * 255.).astype(int)
-    # embed()
-    # visualize_MST_list(valid_datalist, "color_by_dir_%s.ply"%filename, threshold=pc_lower_bound, color_list=color_by_dir)
     
     ####################   calculate feature matching ###########################
     print("Calculate the mapping")
@@ -841,7 +827,6 @@ def main():
         
         color = color_list[i]
         
-        # embed()
         curr_treepart_skeleton, curr_treepart_dir, curr_treepart_radius, curr_treepart_color = generate_cylinder(treepart_info, 
                                                                                             pc_by_index, 
                                                                                             raw_pc_normalize_offset, 
@@ -967,8 +952,6 @@ def main():
             
             treepart_dict['Branches'].append(curr_node_dict)
         
-        # if treepart_spline_color[treepart_idx][0] > treepart_spline_color[treepart_idx][1]:
-        #     embed()
             
         # skip invalid tree parts
         if len(treepart_dict['Branches']) == 0:
@@ -988,12 +971,9 @@ def main():
         
     os.system("mv visualize/raw_treepart_pc ./results/%s"%filename.split('.')[0])
     
-    # embed()
     with open("hist_%s_%d.pkl"%(filename.split('.')[0], num_per_species), 'wb') as f:
         pickle.dump(name_idx_record, f)
     
-    ############  Occupy GPUs for tactic
-    # embed()
         
 if __name__ == "__main__":
     main()
