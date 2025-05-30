@@ -75,6 +75,8 @@ When you finished the inference code, you will find your output in ./results fol
 2. rebuild_MST_normalized_xxx.ply: This is the .ply file visualize the result of neural ranking. All tree part point clouds come from dataset during the neural ranking process.
 3. xxx.yml: Yaml file is a tree graph represent the connectivity of tree parts. This is a key file used for tree part connection and mesh generation. You need to pass this file to the tree mesh generation algorithm which has not been released yet. We will keep working on this section and update soon.
 
+![process](./process.png)
+
 ### Tree Mesh Generation Pipeline
 If you are interested in generating tree meshes from the tree graph, or if you are looking for further collaboration, please contact me by *detailzxc2010@gmail.com* and my PhD advisor *bbenes@purdue.edu*. We would further share a codebase for the final generation process, or we would love to help generating reconstruction results for your data. Please share the point cloud file and yaml file if you would like to get generated results from us.
 
